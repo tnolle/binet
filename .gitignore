@@ -1,0 +1,17 @@
+/.idea/
+/.vscode/
+
+/.out/
+
+*.pyc
+bower_components/
+
+/.res/eventlogs/
+/.res/.cached_eventlogs/
+/.res/paf/
+
+.ipynb_checkpoints/
+
+/.config/pusbullet.json
+/.config/server.json
+/.bash/

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+WARNING: Do not manually edit this file, unless you know what you are doing!
+
+This file has been generated with libPlg v.2.0.3.
+Check https://github.com/delas/plg for sources and other stuff.
+
+ -->
+<process>
+	<!-- This is the list of all meta-attributes of the process -->
+	<meta>
+		<LibPLG_NAME>libPlg</LibPLG_NAME>
+		<libPLG_VERSION>2.0.3</libPLG_VERSION>
+		<name>Medium</name>
+		<id>ullotet162h448nn7nd2ql3nrt</id>
+	</meta>
+	<!-- This is the list of all actual process elements -->
+	<elements>
+		<startEvent id="1765"/>
+		<task id="1792" name="Activity J">
+			<script/>
+		</task>
+		<task id="1856" name="Activity AE">
+			<script/>
+		</task>
+		<task id="1793" name="Activity K">
+			<script/>
+		</task>
+		<task id="1859" name="Activity AF">
+			<script/>
+		</task>
+		<task id="1796" name="Activity L">
+			<script/>
+		</task>
+		<task id="1799" name="Activity M">
+			<script/>
+		</task>
+		<task id="1802" name="Activity N">
+			<script/>
+		</task>
+		<task id="1810" name="Activity O">
+			<script/>
+		</task>
+		<task id="1813" name="Activity P">
+			<script/>
+		</task>
+		<task id="1814" name="Activity Q">
+			<script/>
+		</task>
+		<task id="1815" name="Activity R">
+			<script/>
+		</task>
+		<task id="1819" name="Activity S">
+			<script/>
+		</task>
+		<task id="1820" name="Activity T">
+			<script/>
+		</task>
+		<task id="1824" name="Activity U">
+			<script/>
+		</task>
+		<task id="1827" name="Activity V">
+			<script/>
+		</task>
+		<task id="1828" name="Activity W">
+			<script/>
+		</task>
+		<task id="1767" name="Activity A">
+			<script/>
+		</task>
+		<task id="1831" name="Activity X">
+			<script/>
+		</task>
+		<task id="1770" name="Activity B">
+			<script/>
+		</task>
+		<task id="1771" name="Activity C">
+			<script/>
+		</task>
+		<task id="1774" name="Activity D">
+			<script/>
+		</task>
+		<task id="1775" name="Activity E">
+			<script/>
+		</task>
+		<task id="1778" name="Activity F">
+			<script/>
+		</task>
+		<task id="1842" name="Activity Y">
+			<script/>
+		</task>
+		<task id="1781" name="Activity G">
+			<script/>
+		</task>
+		<task id="1845" name="Activity Z">
+			<script/>
+		</task>
+		<task id="1846" name="Activity AA">
+			<script/>
+		</task>
+		<task id="1784" name="Activity H">
+			<script/>
+		</task>
+		<task id="1849" name="Activity AB">
+			<script/>
+		</task>
+		<task id="1850" name="Activity AC">
+			<script/>
+		</task>
+		<task id="1789" name="Activity I">
+			<script/>
+		</task>
+		<task id="1853" name="Activity AD">
+			<script/>
+		</task>
+		<gateway id="1825" type="ExclusiveGateway"/>
+		<gateway id="1826" type="ExclusiveGateway"/>
+		<gateway id="1811" type="ExclusiveGateway"/>
+		<gateway id="1812" type="ExclusiveGateway"/>
+		<gateway id="1847" type="ExclusiveGateway"/>
+		<gateway id="1768" type="ExclusiveGateway"/>
+		<gateway id="1848" type="ExclusiveGateway"/>
+		<gateway id="1769" type="ExclusiveGateway"/>
+		<gateway id="1772" type="ExclusiveGateway"/>
+		<gateway id="1773" type="ExclusiveGateway"/>
+		<gateway id="1790" type="ExclusiveGateway"/>
+		<gateway id="1791" type="ExclusiveGateway"/>
+		<endEvent id="1766"/>
+		<sequenceFlow id="1794" sourceRef="1790" targetRef="1793"/>
+		<sequenceFlow id="1795" sourceRef="1793" targetRef="1791"/>
+		<sequenceFlow id="1797" sourceRef="1790" targetRef="1796"/>
+		<sequenceFlow id="1798" sourceRef="1796" targetRef="1791"/>
+		<sequenceFlow id="1800" sourceRef="1790" targetRef="1799"/>
+		<sequenceFlow id="1801" sourceRef="1799" targetRef="1791"/>
+		<sequenceFlow id="1803" sourceRef="1790" targetRef="1802"/>
+		<sequenceFlow id="1804" sourceRef="1802" targetRef="1791"/>
+		<sequenceFlow id="1805" sourceRef="1789" targetRef="1790"/>
+		<sequenceFlow id="1806" sourceRef="1791" targetRef="1792"/>
+		<sequenceFlow id="1807" sourceRef="1774" targetRef="1789"/>
+		<sequenceFlow id="1808" sourceRef="1768" targetRef="1771"/>
+		<sequenceFlow id="1809" sourceRef="1792" targetRef="1769"/>
+		<sequenceFlow id="1816" sourceRef="1814" targetRef="1815"/>
+		<sequenceFlow id="1817" sourceRef="1811" targetRef="1814"/>
+		<sequenceFlow id="1818" sourceRef="1815" targetRef="1812"/>
+		<sequenceFlow id="1821" sourceRef="1819" targetRef="1820"/>
+		<sequenceFlow id="1822" sourceRef="1811" targetRef="1819"/>
+		<sequenceFlow id="1823" sourceRef="1820" targetRef="1812"/>
+		<sequenceFlow id="1829" sourceRef="1825" targetRef="1828"/>
+		<sequenceFlow id="1830" sourceRef="1828" targetRef="1826"/>
+		<sequenceFlow id="1832" sourceRef="1825" targetRef="1831"/>
+		<sequenceFlow id="1833" sourceRef="1831" targetRef="1826"/>
+		<sequenceFlow id="1834" sourceRef="1824" targetRef="1825"/>
+		<sequenceFlow id="1835" sourceRef="1826" targetRef="1827"/>
+		<sequenceFlow id="1836" sourceRef="1811" targetRef="1824"/>
+		<sequenceFlow id="1837" sourceRef="1827" targetRef="1812"/>
+		<sequenceFlow id="1838" sourceRef="1810" targetRef="1811"/>
+		<sequenceFlow id="1839" sourceRef="1812" targetRef="1813"/>
+		<sequenceFlow id="1840" sourceRef="1768" targetRef="1810"/>
+		<sequenceFlow id="1841" sourceRef="1813" targetRef="1769"/>
+		<sequenceFlow id="1843" sourceRef="1768" targetRef="1842"/>
+		<sequenceFlow id="1844" sourceRef="1842" targetRef="1769"/>
+		<sequenceFlow id="1851" sourceRef="1847" targetRef="1850"/>
+		<sequenceFlow id="1852" sourceRef="1850" targetRef="1848"/>
+		<sequenceFlow id="1854" sourceRef="1847" targetRef="1853"/>
+		<sequenceFlow id="1855" sourceRef="1853" targetRef="1848"/>
+		<sequenceFlow id="1857" sourceRef="1847" targetRef="1856"/>
+		<sequenceFlow id="1858" sourceRef="1856" targetRef="1848"/>
+		<sequenceFlow id="1860" sourceRef="1847" targetRef="1859"/>
+		<sequenceFlow id="1861" sourceRef="1859" targetRef="1848"/>
+		<sequenceFlow id="1862" sourceRef="1846" targetRef="1847"/>
+		<sequenceFlow id="1863" sourceRef="1848" targetRef="1849"/>
+		<sequenceFlow id="1864" sourceRef="1845" targetRef="1846"/>
+		<sequenceFlow id="1865" sourceRef="1768" targetRef="1845"/>
+		<sequenceFlow id="1866" sourceRef="1849" targetRef="1769"/>
+		<sequenceFlow id="1867" sourceRef="1767" targetRef="1768"/>
+		<sequenceFlow id="1868" sourceRef="1769" targetRef="1770"/>
+		<sequenceFlow id="1869" sourceRef="1765" targetRef="1767"/>
+		<sequenceFlow id="1870" sourceRef="1770" targetRef="1766"/>
+		<sequenceFlow id="1776" sourceRef="1772" targetRef="1775"/>
+		<sequenceFlow id="1777" sourceRef="1775" targetRef="1773"/>
+		<sequenceFlow id="1779" sourceRef="1772" targetRef="1778"/>
+		<sequenceFlow id="1780" sourceRef="1778" targetRef="1773"/>
+		<sequenceFlow id="1782" sourceRef="1772" targetRef="1781"/>
+		<sequenceFlow id="1783" sourceRef="1781" targetRef="1773"/>
+		<sequenceFlow id="1785" sourceRef="1772" targetRef="1784"/>
+		<sequenceFlow id="1786" sourceRef="1784" targetRef="1773"/>
+		<sequenceFlow id="1787" sourceRef="1771" targetRef="1772"/>
+		<sequenceFlow id="1788" sourceRef="1773" targetRef="1774"/>
+	</elements>
+</process>

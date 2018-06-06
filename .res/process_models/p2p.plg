@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+WARNING: Do not manually edit this file, unless you know what you are doing!
+
+This file has been generated with libPlg v.2.0.3.
+Check https://github.com/delas/plg for sources and other stuff.
+
+ -->
+<process>
+	<!-- This is the list of all meta-attributes of the process -->
+	<meta>
+		<LibPLG_NAME>libPlg</LibPLG_NAME>
+		<libPLG_VERSION>2.0.3</libPLG_VERSION>
+		<name>P2P</name>
+		<id>sa5u15h4dvu94vbc5pmsjhc5en</id>
+	</meta>
+	<!-- This is the list of all actual process elements -->
+	<elements>
+		<startEvent id="4680"/>
+		<task id="4688" name="Release PR">
+			<script/>
+		</task>
+		<task id="4689" name="Purchase SC">
+			<script/>
+		</task>
+		<task id="4690" name="Release PO">
+			<script/>
+		</task>
+		<task id="4691" name="Create SC">
+			<script/>
+		</task>
+		<task id="4692" name="Decrease PO">
+			<script/>
+		</task>
+		<task id="4693" name="Increase PO">
+			<script/>
+		</task>
+		<task id="4682" name="Create PR">
+			<script/>
+		</task>
+		<task id="4683" name="Post GR">
+			<script/>
+		</task>
+		<task id="4684" name="Post IR">
+			<script/>
+		</task>
+		<task id="4685" name="Create PO">
+			<script/>
+		</task>
+		<task id="4686" name="Approve SC">
+			<script/>
+		</task>
+		<task id="4687" name="Pay">
+			<script/>
+		</task>
+		<gateway id="4694" type="ExclusiveGateway"/>
+		<gateway id="4695" type="ExclusiveGateway"/>
+		<gateway id="4696" type="ExclusiveGateway"/>
+		<gateway id="4697" type="ExclusiveGateway"/>
+		<endEvent id="4681"/>
+		<sequenceFlow id="4704" sourceRef="4685" targetRef="4695"/>
+		<sequenceFlow id="4705" sourceRef="4694" targetRef="4691"/>
+		<sequenceFlow id="4706" sourceRef="4689" targetRef="4686"/>
+		<sequenceFlow id="4707" sourceRef="4688" targetRef="4697"/>
+		<sequenceFlow id="4708" sourceRef="4686" targetRef="4697"/>
+		<sequenceFlow id="4709" sourceRef="4695" targetRef="4690"/>
+		<sequenceFlow id="4710" sourceRef="4695" targetRef="4692"/>
+		<sequenceFlow id="4711" sourceRef="4695" targetRef="4693"/>
+		<sequenceFlow id="4712" sourceRef="4693" targetRef="4696"/>
+		<sequenceFlow id="4713" sourceRef="4690" targetRef="4683"/>
+		<sequenceFlow id="4714" sourceRef="4691" targetRef="4689"/>
+		<sequenceFlow id="4715" sourceRef="4696" targetRef="4690"/>
+		<sequenceFlow id="4716" sourceRef="4697" targetRef="4685"/>
+		<sequenceFlow id="4717" sourceRef="4692" targetRef="4696"/>
+		<sequenceFlow id="4698" sourceRef="4680" targetRef="4694"/>
+		<sequenceFlow id="4699" sourceRef="4694" targetRef="4682"/>
+		<sequenceFlow id="4700" sourceRef="4683" targetRef="4684"/>
+		<sequenceFlow id="4701" sourceRef="4684" targetRef="4687"/>
+		<sequenceFlow id="4702" sourceRef="4687" targetRef="4681"/>
+		<sequenceFlow id="4703" sourceRef="4682" targetRef="4688"/>
+	</elements>
+</process>

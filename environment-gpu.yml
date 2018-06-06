@@ -1,0 +1,27 @@
+yname: ad
+channels:
+- defaults
+dependencies:
+- python=3.6
+- h5py
+- matplotlib
+- networkx
+- numpy
+- pandas
+- pip
+- scikit-learn
+- scipy
+- seaborn
+- openpyxl
+- lxml
+- xlrd
+- joblib
+- pip:
+  - keras
+  - tensorflow-gpu
+  - tqdm
+  - untangle
+  - hmmlearn
+  - untangle
+  - tqdm
+  - pushbullet.py

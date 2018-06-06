@@ -1,2 +1,1 @@
-# binet
-BINet: Multivariate Business Process Anomaly Detection Using Deep Learning
+# BINet: Multivariate Business Process Anomaly Detection Using Deep Learning
