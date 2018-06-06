@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+WARNING: Do not manually edit this file, unless you know what you are doing!
+
+This file has been generated with libPlg v.2.0.3.
+Check https://github.com/delas/plg for sources and other stuff.
+
+ -->
+<process>
+	<!-- This is the list of all meta-attributes of the process -->
+	<meta>
+		<LibPLG_NAME>libPlg</LibPLG_NAME>
+		<libPLG_VERSION>2.0.3</libPLG_VERSION>
+		<name>Small</name>
+		<id>bg5p2p9v5hv0h40ulg6st0k511</id>
+	</meta>
+	<!-- This is the list of all actual process elements -->
+	<elements>
+		<startEvent id="4533"/>
+		<task id="4545" name="Activity F">
+			<script/>
+		</task>
+		<task id="4546" name="Activity G">
+			<script/>
+		</task>
+		<task id="4547" name="Activity H">
+			<script/>
+		</task>
+		<task id="4549" name="Activity I">
+			<script/>
+		</task>
+		<task id="4581" name="Activity T">
+			<script/>
+		</task>
+		<task id="4550" name="Activity J">
+			<script/>
+		</task>
+		<task id="4555" name="Activity K">
+			<script/>
+		</task>
+		<task id="4558" name="Activity L">
+			<script/>
+		</task>
+		<task id="4559" name="Activity M">
+			<script/>
+		</task>
+		<task id="4560" name="Activity N">
+			<script/>
+		</task>
+		<task id="4564" name="Activity O">
+			<script/>
+		</task>
+		<task id="4565" name="Activity P">
+			<script/>
+		</task>
+		<task id="4535" name="Activity A">
+			<script/>
+		</task>
+		<task id="4536" name="Activity B">
+			<script/>
+		</task>
+		<task id="4569" name="Activity Q">
+			<script/>
+		</task>
+		<task id="4538" name="Activity C">
+			<script/>
+		</task>
+		<task id="4540" name="Activity D">
+			<script/>
+		</task>
+		<task id="4572" name="Activity R">
+			<script/>
+		</task>
+		<task id="4573" name="Activity S">
+			<script/>
+		</task>
+		<task id="4542" name="Activity E">
+			<script/>
+		</task>
+		<gateway id="4544" type="ExclusiveGateway"/>
+		<gateway id="4556" type="ExclusiveGateway"/>
+		<gateway id="4557" type="ExclusiveGateway"/>
+		<gateway id="4543" type="ExclusiveGateway"/>
+		<endEvent id="4534"/>
+		<sequenceFlow id="4548" sourceRef="4546" targetRef="4547"/>
+		<sequenceFlow id="4551" sourceRef="4549" targetRef="4550"/>
+		<sequenceFlow id="4552" sourceRef="4547" targetRef="4549"/>
+		<sequenceFlow id="4553" sourceRef="4543" targetRef="4546"/>
+		<sequenceFlow id="4554" sourceRef="4550" targetRef="4544"/>
+		<sequenceFlow id="4561" sourceRef="4559" targetRef="4560"/>
+		<sequenceFlow id="4562" sourceRef="4556" targetRef="4559"/>
+		<sequenceFlow id="4563" sourceRef="4560" targetRef="4557"/>
+		<sequenceFlow id="4566" sourceRef="4564" targetRef="4565"/>
+		<sequenceFlow id="4567" sourceRef="4556" targetRef="4564"/>
+		<sequenceFlow id="4568" sourceRef="4565" targetRef="4557"/>
+		<sequenceFlow id="4570" sourceRef="4556" targetRef="4569"/>
+		<sequenceFlow id="4571" sourceRef="4569" targetRef="4557"/>
+		<sequenceFlow id="4574" sourceRef="4572" targetRef="4573"/>
+		<sequenceFlow id="4575" sourceRef="4556" targetRef="4572"/>
+		<sequenceFlow id="4576" sourceRef="4573" targetRef="4557"/>
+		<sequenceFlow id="4577" sourceRef="4555" targetRef="4556"/>
+		<sequenceFlow id="4578" sourceRef="4557" targetRef="4558"/>
+		<sequenceFlow id="4579" sourceRef="4543" targetRef="4555"/>
+		<sequenceFlow id="4580" sourceRef="4558" targetRef="4544"/>
+		<sequenceFlow id="4582" sourceRef="4543" targetRef="4581"/>
+		<sequenceFlow id="4583" sourceRef="4581" targetRef="4544"/>
+		<sequenceFlow id="4584" sourceRef="4542" targetRef="4543"/>
+		<sequenceFlow id="4585" sourceRef="4544" targetRef="4545"/>
+		<sequenceFlow id="4586" sourceRef="4540" targetRef="4542"/>
+		<sequenceFlow id="4587" sourceRef="4533" targetRef="4535"/>
+		<sequenceFlow id="4588" sourceRef="4545" targetRef="4534"/>
+		<sequenceFlow id="4537" sourceRef="4535" targetRef="4536"/>
+		<sequenceFlow id="4539" sourceRef="4536" targetRef="4538"/>
+		<sequenceFlow id="4541" sourceRef="4538" targetRef="4540"/>
+	</elements>
+</process>

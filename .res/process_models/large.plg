@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+WARNING: Do not manually edit this file, unless you know what you are doing!
+
+This file has been generated with libPlg v.2.0.3.
+Check https://github.com/delas/plg for sources and other stuff.
+
+ -->
+<process>
+	<!-- This is the list of all meta-attributes of the process -->
+	<meta>
+		<LibPLG_NAME>libPlg</LibPLG_NAME>
+		<libPLG_VERSION>2.0.3</libPLG_VERSION>
+		<name>Large</name>
+		<id>fsncf699b9uhl0jeomrour3igu</id>
+	</meta>
+	<!-- This is the list of all actual process elements -->
+	<elements>
+		<startEvent id="2724"/>
+		<task id="2818" name="Activity AH">
+			<script/>
+		</task>
+		<task id="2755" name="Activity M">
+			<script/>
+		</task>
+		<task id="2819" name="Activity AI">
+			<script/>
+		</task>
+		<task id="2756" name="Activity N">
+			<script/>
+		</task>
+		<task id="2822" name="Activity AJ">
+			<script/>
+		</task>
+		<task id="2760" name="Activity O">
+			<script/>
+		</task>
+		<task id="2761" name="Activity P">
+			<script/>
+		</task>
+		<task id="2825" name="Activity AK">
+			<script/>
+		</task>
+		<task id="2831" name="Activity AL">
+			<script/>
+		</task>
+		<task id="2770" name="Activity Q">
+			<script/>
+		</task>
+		<task id="2834" name="Activity AM">
+			<script/>
+		</task>
+		<task id="2771" name="Activity R">
+			<script/>
+		</task>
+		<task id="2835" name="Activity AN">
+			<script/>
+		</task>
+		<task id="2772" name="Activity S">
+			<script/>
+		</task>
+		<task id="2838" name="Activity AO">
+			<script/>
+		</task>
+		<task id="2775" name="Activity T">
+			<script/>
+		</task>
+		<task id="2776" name="Activity U">
+			<script/>
+		</task>
+		<task id="2778" name="Activity V">
+			<script/>
+		</task>
+		<task id="2843" name="Activity AP">
+			<script/>
+		</task>
+		<task id="2781" name="Activity W">
+			<script/>
+		</task>
+		<task id="2782" name="Activity X">
+			<script/>
+		</task>
+		<task id="2785" name="Activity Y">
+			<script/>
+		</task>
+		<task id="2788" name="Activity Z">
+			<script/>
+		</task>
+		<task id="2726" name="Activity A">
+			<script/>
+		</task>
+		<task id="2791" name="Activity AA">
+			<script/>
+		</task>
+		<task id="2729" name="Activity B">
+			<script/>
+		</task>
+		<task id="2730" name="Activity C">
+			<script/>
+		</task>
+		<task id="2731" name="Activity D">
+			<script/>
+		</task>
+		<task id="2733" name="Activity E">
+			<script/>
+		</task>
+		<task id="2736" name="Activity F">
+			<script/>
+		</task>
+		<task id="2800" name="Activity AB">
+			<script/>
+		</task>
+		<task id="2737" name="Activity G">
+			<script/>
+		</task>
+		<task id="2803" name="Activity AC">
+			<script/>
+		</task>
+		<task id="2740" name="Activity H">
+			<script/>
+		</task>
+		<task id="2804" name="Activity AD">
+			<script/>
+		</task>
+		<task id="2807" name="Activity AE">
+			<script/>
+		</task>
+		<task id="2746" name="Activity I">
+			<script/>
+		</task>
+		<task id="2810" name="Activity AF">
+			<script/>
+		</task>
+		<task id="2749" name="Activity J">
+			<script/>
+		</task>
+		<task id="2750" name="Activity K">
+			<script/>
+		</task>
+		<task id="2751" name="Activity L">
+			<script/>
+		</task>
+		<task id="2815" name="Activity AG">
+			<script/>
+		</task>
+		<gateway id="2816" type="ExclusiveGateway"/>
+		<gateway id="2817" type="ExclusiveGateway"/>
+		<gateway id="2727" type="ExclusiveGateway"/>
+		<gateway id="2728" type="ExclusiveGateway"/>
+		<gateway id="2734" type="ExclusiveGateway"/>
+		<gateway id="2735" type="ExclusiveGateway"/>
+		<gateway id="2832" type="ExclusiveGateway"/>
+		<gateway id="2801" type="ExclusiveGateway"/>
+		<gateway id="2833" type="ExclusiveGateway"/>
+		<gateway id="2802" type="ExclusiveGateway"/>
+		<gateway id="2747" type="ExclusiveGateway"/>
+		<gateway id="2779" type="ExclusiveGateway"/>
+		<gateway id="2748" type="ExclusiveGateway"/>
+		<gateway id="2780" type="ExclusiveGateway"/>
+		<endEvent id="2725"/>
+		<sequenceFlow id="2820" sourceRef="2816" targetRef="2819"/>
+		<sequenceFlow id="2821" sourceRef="2819" targetRef="2817"/>
+		<sequenceFlow id="2823" sourceRef="2816" targetRef="2822"/>
+		<sequenceFlow id="2824" sourceRef="2822" targetRef="2817"/>
+		<sequenceFlow id="2826" sourceRef="2816" targetRef="2825"/>
+		<sequenceFlow id="2827" sourceRef="2825" targetRef="2817"/>
+		<sequenceFlow id="2828" sourceRef="2815" targetRef="2816"/>
+		<sequenceFlow id="2829" sourceRef="2817" targetRef="2818"/>
+		<sequenceFlow id="2830" sourceRef="2803" targetRef="2815"/>
+		<sequenceFlow id="2836" sourceRef="2832" targetRef="2835"/>
+		<sequenceFlow id="2837" sourceRef="2835" targetRef="2833"/>
+		<sequenceFlow id="2839" sourceRef="2832" targetRef="2838"/>
+		<sequenceFlow id="2840" sourceRef="2838" targetRef="2833"/>
+		<sequenceFlow id="2841" sourceRef="2831" targetRef="2832"/>
+		<sequenceFlow id="2842" sourceRef="2833" targetRef="2834"/>
+		<sequenceFlow id="2844" sourceRef="2834" targetRef="2843"/>
+		<sequenceFlow id="2845" sourceRef="2818" targetRef="2831"/>
+		<sequenceFlow id="2846" sourceRef="2727" targetRef="2800"/>
+		<sequenceFlow id="2847" sourceRef="2843" targetRef="2728"/>
+		<sequenceFlow id="2848" sourceRef="2726" targetRef="2727"/>
+		<sequenceFlow id="2849" sourceRef="2728" targetRef="2729"/>
+		<sequenceFlow id="2850" sourceRef="2724" targetRef="2726"/>
+		<sequenceFlow id="2851" sourceRef="2729" targetRef="2725"/>
+		<sequenceFlow id="2732" sourceRef="2730" targetRef="2731"/>
+		<sequenceFlow id="2738" sourceRef="2734" targetRef="2737"/>
+		<sequenceFlow id="2739" sourceRef="2737" targetRef="2735"/>
+		<sequenceFlow id="2741" sourceRef="2734" targetRef="2740"/>
+		<sequenceFlow id="2742" sourceRef="2740" targetRef="2735"/>
+		<sequenceFlow id="2743" sourceRef="2733" targetRef="2734"/>
+		<sequenceFlow id="2744" sourceRef="2735" targetRef="2736"/>
+		<sequenceFlow id="2745" sourceRef="2731" targetRef="2733"/>
+		<sequenceFlow id="2752" sourceRef="2750" targetRef="2751"/>
+		<sequenceFlow id="2753" sourceRef="2747" targetRef="2750"/>
+		<sequenceFlow id="2754" sourceRef="2751" targetRef="2748"/>
+		<sequenceFlow id="2757" sourceRef="2755" targetRef="2756"/>
+		<sequenceFlow id="2758" sourceRef="2747" targetRef="2755"/>
+		<sequenceFlow id="2759" sourceRef="2756" targetRef="2748"/>
+		<sequenceFlow id="2762" sourceRef="2760" targetRef="2761"/>
+		<sequenceFlow id="2763" sourceRef="2747" targetRef="2760"/>
+		<sequenceFlow id="2764" sourceRef="2761" targetRef="2748"/>
+		<sequenceFlow id="2765" sourceRef="2746" targetRef="2747"/>
+		<sequenceFlow id="2766" sourceRef="2748" targetRef="2749"/>
+		<sequenceFlow id="2767" sourceRef="2736" targetRef="2746"/>
+		<sequenceFlow id="2768" sourceRef="2727" targetRef="2730"/>
+		<sequenceFlow id="2769" sourceRef="2749" targetRef="2728"/>
+		<sequenceFlow id="2773" sourceRef="2771" targetRef="2772"/>
+		<sequenceFlow id="2774" sourceRef="2770" targetRef="2771"/>
+		<sequenceFlow id="2777" sourceRef="2775" targetRef="2776"/>
+		<sequenceFlow id="2783" sourceRef="2779" targetRef="2782"/>
+		<sequenceFlow id="2784" sourceRef="2782" targetRef="2780"/>
+		<sequenceFlow id="2786" sourceRef="2779" targetRef="2785"/>
+		<sequenceFlow id="2787" sourceRef="2785" targetRef="2780"/>
+		<sequenceFlow id="2789" sourceRef="2779" targetRef="2788"/>
+		<sequenceFlow id="2790" sourceRef="2788" targetRef="2780"/>
+		<sequenceFlow id="2792" sourceRef="2779" targetRef="2791"/>
+		<sequenceFlow id="2793" sourceRef="2791" targetRef="2780"/>
+		<sequenceFlow id="2794" sourceRef="2778" targetRef="2779"/>
+		<sequenceFlow id="2795" sourceRef="2780" targetRef="2781"/>
+		<sequenceFlow id="2796" sourceRef="2776" targetRef="2778"/>
+		<sequenceFlow id="2797" sourceRef="2772" targetRef="2775"/>
+		<sequenceFlow id="2798" sourceRef="2727" targetRef="2770"/>
+		<sequenceFlow id="2799" sourceRef="2781" targetRef="2728"/>
+		<sequenceFlow id="2805" sourceRef="2801" targetRef="2804"/>
+		<sequenceFlow id="2806" sourceRef="2804" targetRef="2802"/>
+		<sequenceFlow id="2808" sourceRef="2801" targetRef="2807"/>
+		<sequenceFlow id="2809" sourceRef="2807" targetRef="2802"/>
+		<sequenceFlow id="2811" sourceRef="2801" targetRef="2810"/>
+		<sequenceFlow id="2812" sourceRef="2810" targetRef="2802"/>
+		<sequenceFlow id="2813" sourceRef="2800" targetRef="2801"/>
+		<sequenceFlow id="2814" sourceRef="2802" targetRef="2803"/>
+	</elements>
+</process>
