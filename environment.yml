@@ -1,27 +1,31 @@
-name: ad
+name: binet
 channels:
-- defaults
+  - defaults
 dependencies:
-- python=3.6
-- h5py
-- matplotlib
-- networkx
-- numpy
-- pandas
-- pip
-- scikit-learn
-- scipy
-- seaborn
-- openpyxl
-- lxml
-- xlrd
-- joblib
-- pip:
-  - keras
-  - tensorflow
-  - tqdm
-  - untangle
-  - hmmlearn
-  - untangle
-  - tqdm
-  - pushbullet.py
+  - python=3.6
+  - h5py
+  - jupyter
+  - flask
+  - joblib
+  - lxml
+  - matplotlib
+  - networkx
+  - numpy
+  - openpyxl
+  - pandas
+  - pip
+  - pyodbc
+  - scikit-learn
+  - scikit-posthocs
+  - scipy
+  - seaborn
+  - xlrd
+  - pip:
+      - arrow
+      - keras
+      - pydot
+      - pygraphviz
+      - sqlalchemy
+      - tensorflow
+      - tqdm
+      - untangle
