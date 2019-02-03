@@ -8,9 +8,9 @@ Specifically, it also contains the implementations for the DAE method from [1, 2
 All results can be reproduced using the notebooks in the `notebooks` directory.
 
 ## Additional Material
-To complement the findings in [3] this repository contains Jupyter notebooks.
+To illustrate the findings in [4], this repository contains Jupyter notebooks.
 The notebooks are named according to the sections in the paper.
-Numbers beginning with `A` contain additional material which is not included in the papers.
+Notebooks with `A` in the name contain additional material which is not included in the papers.
 The code to reproduce the figures in the paper can be found inside the notebooks.
 All necessary files to reproduce the results are also included in the repository.
 
