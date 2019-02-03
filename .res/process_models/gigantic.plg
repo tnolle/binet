@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+
+WARNING: Do not manually edit this file, unless you know what you are doing!
+
+This file has been generated with libPlg v.2.0.5.
+Check https://github.com/delas/plg for sources and other stuff.
+
+ -->
+<process>
+	<!-- This is the list of all meta-attributes of the process -->
+	<meta>
+		<LibPLG_NAME>libPlg</LibPLG_NAME>
+		<libPLG_VERSION>2.0.5</libPLG_VERSION>
+		<name>Gigantic</name>
+		<id>oeleckfp9dv07fq9d5i848o3v7</id>
+	</meta>
+	<!-- This is the list of all actual process elements -->
+	<elements>
+		<startEvent id="29955"/>
+		<task id="30080" name="Activity AQ">
+			<script/>
+		</task>
+		<task id="30081" name="Activity AR">
+			<script/>
+		</task>
+		<task id="29957" name="Activity A">
+			<script/>
+		</task>
+		<task id="30085" name="Activity AS">
+			<script/>
+		</task>
+		<task id="29960" name="Activity B">
+			<script/>
+		</task>
+		<task id="30088" name="Activity AT">
+			<script/>
+		</task>
+		<task id="29961" name="Activity C">
+			<script/>
+		</task>
+		<task id="30089" name="Activity AU">
+			<script/>
+		</task>
+		<task id="29964" name="Activity D">
+			<script/>
+		</task>
+		<task id="30092" name="Activity AV">
+			<script/>
+		</task>
+		<task id="29965" name="Activity E">
+			<script/>
+		</task>
+		<task id="29966" name="Activity F">
+			<script/>
+		</task>
+		<task id="30095" name="Activity AW">
+			<script/>
+		</task>
+		<task id="29970" name="Activity G">
+			<script/>
+		</task>
+		<task id="30098" name="Activity AX">
+			<script/>
+		</task>
+		<task id="29973" name="Activity H">
+			<script/>
+		</task>
+		<task id="30101" name="Activity AY">
+			<script/>
+		</task>
+		<task id="29974" name="Activity I">
+			<script/>
+		</task>
+		<task id="30104" name="Activity AZ">
+			<script/>
+		</task>
+		<task id="29977" name="Activity J">
+			<script/>
+		</task>
+		<task id="29980" name="Activity K">
+			<script/>
+		</task>
+		<task id="30111" name="Activity BA">
+			<script/>
+		</task>
+		<task id="30112" name="Activity BB">
+			<script/>
+		</task>
+		<task id="29987" name="Activity L">
+			<script/>
+		</task>
+		<task id="29990" name="Activity M">
+			<script/>
+		</task>
+		<task id="29991" name="Activity N">
+			<script/>
+		</task>
+		<task id="29994" name="Activity O">
+			<script/>
+		</task>
+		<task id="30124" name="Activity BC">
+			<script/>
+		</task>
+		<task id="29997" name="Activity P">
+			<script/>
+		</task>
+		<task id="30127" name="Activity BD">
+			<script/>
+		</task>
+		<task id="30000" name="Activity Q">
+			<script/>
+		</task>
+		<task id="30130" name="Activity BE">
+			<script/>
+		</task>
+		<task id="30131" name="Activity BF">
+			<script/>
+		</task>
+		<task id="30132" name="Activity BG">
+			<script/>
+		</task>
+		<task id="30007" name="Activity R">
+			<script/>
+		</task>
+		<task id="30136" name="Activity BH">
+			<script/>
+		</task>
+		<task id="30137" name="Activity BI">
+			<script/>
+		</task>
+		<task id="30012" name="Activity S">
+			<script/>
+		</task>
+		<task id="30141" name="Activity BJ">
+			<script/>
+		</task>
+		<task id="30016" name="Activity T">
+			<script/>
+		</task>
+		<task id="30144" name="Activity BK">
+			<script/>
+		</task>
+		<task id="30145" name="Activity BL">
+			<script/>
+		</task>
+		<task id="30019" name="Activity U">
+			<script/>
+		</task>
+		<task id="30020" name="Activity V">
+			<script/>
+		</task>
+		<task id="30148" name="Activity BM">
+			<script/>
+		</task>
+		<task id="30023" name="Activity W">
+			<script/>
+		</task>
+		<task id="30151" name="Activity BN">
+			<script/>
+		</task>
+		<task id="30024" name="Activity X">
+			<script/>
+		</task>
+		<task id="30027" name="Activity Y">
+			<script/>
+		</task>
+		<task id="30030" name="Activity Z">
+			<script/>
+		</task>
+		<task id="30158" name="Activity BO">
+			<script/>
+		</task>
+		<task id="30033" name="Activity AA">
+			<script/>
+		</task>
+		<task id="30161" name="Activity BP">
+			<script/>
+		</task>
+		<task id="30038" name="Activity AB">
+			<script/>
+		</task>
+		<task id="30166" name="Activity BQ">
+			<script/>
+		</task>
+		<task id="30167" name="Activity BR">
+			<script/>
+		</task>
+		<task id="30042" name="Activity AC">
+			<script/>
+		</task>
+		<task id="30170" name="Activity BS">
+			<script/>
+		</task>
+		<task id="30171" name="Activity BT">
+			<script/>
+		</task>
+		<task id="30045" name="Activity AD">
+			<script/>
+		</task>
+		<task id="30046" name="Activity AE">
+			<script/>
+		</task>
+		<task id="30174" name="Activity BU">
+			<script/>
+		</task>
+		<task id="30049" name="Activity AF">
+			<script/>
+		</task>
+		<task id="30177" name="Activity BV">
+			<script/>
+		</task>
+		<task id="30052" name="Activity AG">
+			<script/>
+		</task>
+		<task id="30180" name="Activity BW">
+			<script/>
+		</task>
+		<task id="30053" name="Activity AH">
+			<script/>
+		</task>
+		<task id="30183" name="Activity BX">
+			<script/>
+		</task>
+		<task id="30057" name="Activity AI">
+			<script/>
+		</task>
+		<task id="30058" name="Activity AJ">
+			<script/>
+		</task>
+		<task id="30186" name="Activity BY">
+			<script/>
+		</task>
+		<task id="30066" name="Activity AK">
+			<script/>
+		</task>
+		<task id="30067" name="Activity AL">
+			<script/>
+		</task>
+		<task id="30195" name="Activity BZ">
+			<script/>
+		</task>
+		<task id="30068" name="Activity AM">
+			<script/>
+		</task>
+		<task id="30073" name="Activity AN">
+			<script/>
+		</task>
+		<task id="30076" name="Activity AO">
+			<script/>
+		</task>
+		<task id="30077" name="Activity AP">
+			<script/>
+		</task>
+		<gateway id="30017" type="ExclusiveGateway"/>
+		<gateway id="30018" type="ExclusiveGateway"/>
+		<gateway id="29988" type="ExclusiveGateway"/>
+		<gateway id="29989" type="ExclusiveGateway"/>
+		<gateway id="30021" type="ExclusiveGateway"/>
+		<gateway id="29958" type="ExclusiveGateway"/>
+		<gateway id="30022" type="ExclusiveGateway"/>
+		<gateway id="30086" type="ExclusiveGateway"/>
+		<gateway id="29959" type="ExclusiveGateway"/>
+		<gateway id="30087" type="ExclusiveGateway"/>
+		<gateway id="29962" type="ExclusiveGateway"/>
+		<gateway id="29963" type="ExclusiveGateway"/>
+		<gateway id="30128" type="ExclusiveGateway"/>
+		<gateway id="30129" type="ExclusiveGateway"/>
+		<gateway id="29971" type="ExclusiveGateway"/>
+		<gateway id="29972" type="ExclusiveGateway"/>
+		<gateway id="30168" type="ExclusiveGateway"/>
+		<gateway id="30169" type="ExclusiveGateway"/>
+		<gateway id="30074" type="ExclusiveGateway"/>
+		<gateway id="30043" type="ExclusiveGateway"/>
+		<gateway id="30075" type="ExclusiveGateway"/>
+		<gateway id="30044" type="ExclusiveGateway"/>
+		<gateway id="30142" type="ExclusiveGateway"/>
+		<gateway id="30143" type="ExclusiveGateway"/>
+		<endEvent id="29956"/>
+		<sequenceFlow id="29967" sourceRef="29965" targetRef="29966"/>
+		<sequenceFlow id="29968" sourceRef="29962" targetRef="29965"/>
+		<sequenceFlow id="29969" sourceRef="29966" targetRef="29963"/>
+		<sequenceFlow id="29975" sourceRef="29971" targetRef="29974"/>
+		<sequenceFlow id="29976" sourceRef="29974" targetRef="29972"/>
+		<sequenceFlow id="29978" sourceRef="29971" targetRef="29977"/>
+		<sequenceFlow id="29979" sourceRef="29977" targetRef="29972"/>
+		<sequenceFlow id="29981" sourceRef="29971" targetRef="29980"/>
+		<sequenceFlow id="29982" sourceRef="29980" targetRef="29972"/>
+		<sequenceFlow id="29983" sourceRef="29970" targetRef="29971"/>
+		<sequenceFlow id="29984" sourceRef="29972" targetRef="29973"/>
+		<sequenceFlow id="29985" sourceRef="29962" targetRef="29970"/>
+		<sequenceFlow id="29986" sourceRef="29973" targetRef="29963"/>
+		<sequenceFlow id="29992" sourceRef="29988" targetRef="29991"/>
+		<sequenceFlow id="29993" sourceRef="29991" targetRef="29989"/>
+		<sequenceFlow id="29995" sourceRef="29988" targetRef="29994"/>
+		<sequenceFlow id="29996" sourceRef="29994" targetRef="29989"/>
+		<sequenceFlow id="29998" sourceRef="29988" targetRef="29997"/>
+		<sequenceFlow id="29999" sourceRef="29997" targetRef="29989"/>
+		<sequenceFlow id="30001" sourceRef="29988" targetRef="30000"/>
+		<sequenceFlow id="30002" sourceRef="30000" targetRef="29989"/>
+		<sequenceFlow id="30003" sourceRef="29987" targetRef="29988"/>
+		<sequenceFlow id="30004" sourceRef="29989" targetRef="29990"/>
+		<sequenceFlow id="30005" sourceRef="29962" targetRef="29987"/>
+		<sequenceFlow id="30006" sourceRef="29990" targetRef="29963"/>
+		<sequenceFlow id="30008" sourceRef="29962" targetRef="30007"/>
+		<sequenceFlow id="30009" sourceRef="30007" targetRef="29963"/>
+		<sequenceFlow id="30010" sourceRef="29961" targetRef="29962"/>
+		<sequenceFlow id="30011" sourceRef="29963" targetRef="29964"/>
+		<sequenceFlow id="30013" sourceRef="29964" targetRef="30012"/>
+		<sequenceFlow id="30014" sourceRef="29958" targetRef="29961"/>
+		<sequenceFlow id="30015" sourceRef="30012" targetRef="29959"/>
+		<sequenceFlow id="30025" sourceRef="30021" targetRef="30024"/>
+		<sequenceFlow id="30026" sourceRef="30024" targetRef="30022"/>
+		<sequenceFlow id="30028" sourceRef="30021" targetRef="30027"/>
+		<sequenceFlow id="30029" sourceRef="30027" targetRef="30022"/>
+		<sequenceFlow id="30031" sourceRef="30021" targetRef="30030"/>
+		<sequenceFlow id="30032" sourceRef="30030" targetRef="30022"/>
+		<sequenceFlow id="30034" sourceRef="30021" targetRef="30033"/>
+		<sequenceFlow id="30035" sourceRef="30033" targetRef="30022"/>
+		<sequenceFlow id="30036" sourceRef="30020" targetRef="30021"/>
+		<sequenceFlow id="30037" sourceRef="30022" targetRef="30023"/>
+		<sequenceFlow id="30039" sourceRef="30023" targetRef="30038"/>
+		<sequenceFlow id="30040" sourceRef="30017" targetRef="30020"/>
+		<sequenceFlow id="30041" sourceRef="30038" targetRef="30018"/>
+		<sequenceFlow id="30047" sourceRef="30043" targetRef="30046"/>
+		<sequenceFlow id="30048" sourceRef="30046" targetRef="30044"/>
+		<sequenceFlow id="30050" sourceRef="30043" targetRef="30049"/>
+		<sequenceFlow id="30051" sourceRef="30049" targetRef="30044"/>
+		<sequenceFlow id="30054" sourceRef="30052" targetRef="30053"/>
+		<sequenceFlow id="30055" sourceRef="30043" targetRef="30052"/>
+		<sequenceFlow id="30056" sourceRef="30053" targetRef="30044"/>
+		<sequenceFlow id="30059" sourceRef="30057" targetRef="30058"/>
+		<sequenceFlow id="30060" sourceRef="30043" targetRef="30057"/>
+		<sequenceFlow id="30061" sourceRef="30058" targetRef="30044"/>
+		<sequenceFlow id="30062" sourceRef="30042" targetRef="30043"/>
+		<sequenceFlow id="30063" sourceRef="30044" targetRef="30045"/>
+		<sequenceFlow id="30064" sourceRef="30017" targetRef="30042"/>
+		<sequenceFlow id="30065" sourceRef="30045" targetRef="30018"/>
+		<sequenceFlow id="30069" sourceRef="30067" targetRef="30068"/>
+		<sequenceFlow id="30070" sourceRef="30066" targetRef="30067"/>
+		<sequenceFlow id="30071" sourceRef="30017" targetRef="30066"/>
+		<sequenceFlow id="30072" sourceRef="30068" targetRef="30018"/>
+		<sequenceFlow id="30078" sourceRef="30074" targetRef="30077"/>
+		<sequenceFlow id="30079" sourceRef="30077" targetRef="30075"/>
+		<sequenceFlow id="30082" sourceRef="30080" targetRef="30081"/>
+		<sequenceFlow id="30083" sourceRef="30074" targetRef="30080"/>
+		<sequenceFlow id="30084" sourceRef="30081" targetRef="30075"/>
+		<sequenceFlow id="30090" sourceRef="30086" targetRef="30089"/>
+		<sequenceFlow id="30091" sourceRef="30089" targetRef="30087"/>
+		<sequenceFlow id="30093" sourceRef="30086" targetRef="30092"/>
+		<sequenceFlow id="30094" sourceRef="30092" targetRef="30087"/>
+		<sequenceFlow id="30096" sourceRef="30086" targetRef="30095"/>
+		<sequenceFlow id="30097" sourceRef="30095" targetRef="30087"/>
+		<sequenceFlow id="30099" sourceRef="30086" targetRef="30098"/>
+		<sequenceFlow id="30100" sourceRef="30098" targetRef="30087"/>
+		<sequenceFlow id="30102" sourceRef="30086" targetRef="30101"/>
+		<sequenceFlow id="30103" sourceRef="30101" targetRef="30087"/>
+		<sequenceFlow id="30105" sourceRef="30086" targetRef="30104"/>
+		<sequenceFlow id="30106" sourceRef="30104" targetRef="30087"/>
+		<sequenceFlow id="30107" sourceRef="30085" targetRef="30086"/>
+		<sequenceFlow id="30108" sourceRef="30087" targetRef="30088"/>
+		<sequenceFlow id="30109" sourceRef="30074" targetRef="30085"/>
+		<sequenceFlow id="30110" sourceRef="30088" targetRef="30075"/>
+		<sequenceFlow id="30113" sourceRef="30111" targetRef="30112"/>
+		<sequenceFlow id="30114" sourceRef="30074" targetRef="30111"/>
+		<sequenceFlow id="30115" sourceRef="30112" targetRef="30075"/>
+		<sequenceFlow id="30116" sourceRef="30073" targetRef="30074"/>
+		<sequenceFlow id="30117" sourceRef="30075" targetRef="30076"/>
+		<sequenceFlow id="30118" sourceRef="30017" targetRef="30073"/>
+		<sequenceFlow id="30119" sourceRef="30076" targetRef="30018"/>
+		<sequenceFlow id="30120" sourceRef="30016" targetRef="30017"/>
+		<sequenceFlow id="30121" sourceRef="30018" targetRef="30019"/>
+		<sequenceFlow id="30122" sourceRef="29958" targetRef="30016"/>
+		<sequenceFlow id="30123" sourceRef="30019" targetRef="29959"/>
+		<sequenceFlow id="30125" sourceRef="29958" targetRef="30124"/>
+		<sequenceFlow id="30126" sourceRef="30124" targetRef="29959"/>
+		<sequenceFlow id="30133" sourceRef="30131" targetRef="30132"/>
+		<sequenceFlow id="30134" sourceRef="30128" targetRef="30131"/>
+		<sequenceFlow id="30135" sourceRef="30132" targetRef="30129"/>
+		<sequenceFlow id="30138" sourceRef="30136" targetRef="30137"/>
+		<sequenceFlow id="30139" sourceRef="30128" targetRef="30136"/>
+		<sequenceFlow id="30140" sourceRef="30137" targetRef="30129"/>
+		<sequenceFlow id="30146" sourceRef="30142" targetRef="30145"/>
+		<sequenceFlow id="30147" sourceRef="30145" targetRef="30143"/>
+		<sequenceFlow id="30149" sourceRef="30142" targetRef="30148"/>
+		<sequenceFlow id="30150" sourceRef="30148" targetRef="30143"/>
+		<sequenceFlow id="30152" sourceRef="30142" targetRef="30151"/>
+		<sequenceFlow id="30153" sourceRef="30151" targetRef="30143"/>
+		<sequenceFlow id="30154" sourceRef="30141" targetRef="30142"/>
+		<sequenceFlow id="30155" sourceRef="30143" targetRef="30144"/>
+		<sequenceFlow id="30156" sourceRef="30128" targetRef="30141"/>
+		<sequenceFlow id="30157" sourceRef="30144" targetRef="30129"/>
+		<sequenceFlow id="30159" sourceRef="30128" targetRef="30158"/>
+		<sequenceFlow id="30160" sourceRef="30158" targetRef="30129"/>
+		<sequenceFlow id="30162" sourceRef="30128" targetRef="30161"/>
+		<sequenceFlow id="30163" sourceRef="30161" targetRef="30129"/>
+		<sequenceFlow id="30164" sourceRef="30127" targetRef="30128"/>
+		<sequenceFlow id="30165" sourceRef="30129" targetRef="30130"/>
+		<sequenceFlow id="30172" sourceRef="30168" targetRef="30171"/>
+		<sequenceFlow id="30173" sourceRef="30171" targetRef="30169"/>
+		<sequenceFlow id="30175" sourceRef="30168" targetRef="30174"/>
+		<sequenceFlow id="30176" sourceRef="30174" targetRef="30169"/>
+		<sequenceFlow id="30178" sourceRef="30168" targetRef="30177"/>
+		<sequenceFlow id="30179" sourceRef="30177" targetRef="30169"/>
+		<sequenceFlow id="30181" sourceRef="30168" targetRef="30180"/>
+		<sequenceFlow id="30182" sourceRef="30180" targetRef="30169"/>
+		<sequenceFlow id="30184" sourceRef="30168" targetRef="30183"/>
+		<sequenceFlow id="30185" sourceRef="30183" targetRef="30169"/>
+		<sequenceFlow id="30187" sourceRef="30168" targetRef="30186"/>
+		<sequenceFlow id="30188" sourceRef="30186" targetRef="30169"/>
+		<sequenceFlow id="30189" sourceRef="30167" targetRef="30168"/>
+		<sequenceFlow id="30190" sourceRef="30169" targetRef="30170"/>
+		<sequenceFlow id="30191" sourceRef="30166" targetRef="30167"/>
+		<sequenceFlow id="30192" sourceRef="30130" targetRef="30166"/>
+		<sequenceFlow id="30193" sourceRef="29958" targetRef="30127"/>
+		<sequenceFlow id="30194" sourceRef="30170" targetRef="29959"/>
+		<sequenceFlow id="30196" sourceRef="29958" targetRef="30195"/>
+		<sequenceFlow id="30197" sourceRef="30195" targetRef="29959"/>
+		<sequenceFlow id="30198" sourceRef="29957" targetRef="29958"/>
+		<sequenceFlow id="30199" sourceRef="29959" targetRef="29960"/>
+		<sequenceFlow id="30200" sourceRef="29955" targetRef="29957"/>
+		<sequenceFlow id="30201" sourceRef="29960" targetRef="29956"/>
+	</elements>
+</process>
