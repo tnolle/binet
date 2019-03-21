@@ -73,5 +73,5 @@ Note: To use the graph plotting methods, you will have to install Graphviz.
     2018](https://link.springer.com/article/10.1007%2Fs10994-018-5702-8)
 3. [Nolle, T., Seeliger, A., Mühlhäuser, M.: BINet: Multivariate Business Process Anomaly Detection Using Deep Learning,
     2018](https://link.springer.com/chapter/10.1007/978-3-319-98648-7_16)
-4. Nolle, T., Luettgen, S., Seeliger, A., Mühlhäuser, M.: BINet: Multi-perspective Business Process Anomaly Classification,
-   2019, (under review)
+4. [Nolle, T., Luettgen, S., Seeliger, A., Mühlhäuser, M.: BINet: Multi-perspective Business Process Anomaly Classification,
+   2019, (under review)](https://arxiv.org/abs/1902.03155)
