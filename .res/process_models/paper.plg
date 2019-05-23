@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+
+WARNING: Do not manually edit this file, unless you know what you are doing!
+
+This file has been generated with libPlg v.2.0.5.
+Check https://github.com/delas/plg for sources and other stuff.
+
+ -->
+<process>
+	<!-- This is the list of all meta-attributes of the process -->
+	<meta>
+		<LibPLG_NAME>libPlg</LibPLG_NAME>
+		<libPLG_VERSION>2.0.5</libPLG_VERSION>
+		<name>Process_1</name>
+		<id>4fim8975tn1fjt31oht2636mjm</id>
+	</meta>
+	<!-- This is the list of all actual process elements -->
+	<elements>
+		<startEvent id="138"/>
+		<task id="140" name="Research Related Work">
+			<script/>
+		</task>
+		<task id="141" name="Develop Method">
+			<script/>
+		</task>
+		<task id="142" name="Develop Hypothesis">
+			<script/>
+		</task>
+		<task id="143" name="Identify Problem">
+			<script/>
+		</task>
+		<task id="144" name="Experiment">
+			<script/>
+		</task>
+		<task id="145" name="Conduct Study">
+			<script/>
+		</task>
+		<task id="146" name="Evaluate">
+			<script/>
+		</task>
+		<task id="147" name="Conclude">
+			<script/>
+		</task>
+		<task id="148" name="Submit">
+			<script/>
+		</task>
+		<task id="149" name="Revise">
+			<script/>
+		</task>
+		<task id="150" name="Resubmit">
+			<script/>
+		</task>
+		<task id="151" name="Review">
+			<script/>
+		</task>
+		<task id="152" name="Minor Revision">
+			<script/>
+		</task>
+		<task id="153" name="Final Decision">
+			<script/>
+		</task>
+		<gateway id="154" type="ExclusiveGateway"/>
+		<gateway id="155" type="ExclusiveGateway"/>
+		<gateway id="156" type="ExclusiveGateway"/>
+		<gateway id="157" type="ExclusiveGateway"/>
+		<endEvent id="139"/>
+		<sequenceFlow id="160" sourceRef="140" targetRef="154"/>
+		<sequenceFlow id="161" sourceRef="154" targetRef="142"/>
+		<sequenceFlow id="162" sourceRef="154" targetRef="141"/>
+		<sequenceFlow id="163" sourceRef="141" targetRef="155"/>
+		<sequenceFlow id="164" sourceRef="142" targetRef="155"/>
+		<sequenceFlow id="165" sourceRef="155" targetRef="144"/>
+		<sequenceFlow id="166" sourceRef="144" targetRef="156"/>
+		<sequenceFlow id="167" sourceRef="156" targetRef="145"/>
+		<sequenceFlow id="168" sourceRef="156" targetRef="146"/>
+		<sequenceFlow id="169" sourceRef="145" targetRef="157"/>
+		<sequenceFlow id="170" sourceRef="146" targetRef="157"/>
+		<sequenceFlow id="171" sourceRef="157" targetRef="147"/>
+		<sequenceFlow id="172" sourceRef="147" targetRef="148"/>
+		<sequenceFlow id="173" sourceRef="148" targetRef="151"/>
+		<sequenceFlow id="174" sourceRef="149" targetRef="150"/>
+		<sequenceFlow id="175" sourceRef="150" targetRef="153"/>
+		<sequenceFlow id="176" sourceRef="153" targetRef="139"/>
+		<sequenceFlow id="177" sourceRef="152" targetRef="149"/>
+		<sequenceFlow id="178" sourceRef="151" targetRef="152"/>
+		<sequenceFlow id="179" sourceRef="151" targetRef="153"/>
+		<sequenceFlow id="158" sourceRef="138" targetRef="143"/>
+		<sequenceFlow id="159" sourceRef="143" targetRef="140"/>
+	</elements>
+</process>
