@@ -22,6 +22,7 @@ from april.enums import Base
 from april.enums import Heuristic
 from april.enums import Mode
 from april.enums import Strategy
+from april.enums import AttributeType
 from april.fs import ModelFile
 
 
@@ -211,6 +212,7 @@ def binet_model_fn(dataset,
     from keras.layers import GRU
     from keras.layers import BatchNormalization
     from keras.layers import Dense
+    from keras.layers import Reshape
     from keras.optimizers import Adam
     from april.anomalydetection.binet.attention import Attention
 
@@ -222,12 +224,19 @@ def binet_model_fn(dataset,
         use_present_attributes = False
         use_present_activity = True
 
+    from keras import losses
     if sparse:
         targets = dataset.train_targets
-        loss = 'sparse_categorical_crossentropy'
+        categorical_loss = losses.sparse_categorical_crossentropy
     else:
         targets = dataset.onehot_train_targets
-        loss = 'categorical_crossentropy'
+        categorical_loss = losses.categorical_crossentropy
+
+    # TODO: Tune mse_weight
+    mse_weight = 0.5
+    loss_functions = {AttributeType.CATEGORICAL: categorical_loss, AttributeType.NUMERICAL:
+        lambda y_t, y_p: mse_weight * losses.mean_squared_error(y_t, y_p)}
+    loss_map = {}
 
     if not use_attributes:
         features = dataset.features[:1]
@@ -242,19 +251,25 @@ def binet_model_fn(dataset,
     embeddings = []
     inputs = []
     past_outputs = []
-    for feature, attr_dim, attr_key in zip(features, dataset.attribute_dims, dataset.attribute_keys):
+    for feature, attr_dim, attr_key, attr_type in \
+            zip(features, dataset.attribute_dims, dataset.attribute_keys, dataset.attribute_types):
+        # Assign loss to attribute
+        loss_map[attr_key] = loss_functions[attr_type]
+
         i = Input(shape=(None,), name=f'past_{attr_key}{postfix}')
         inputs.append(i)
 
-        voc_size = int(attr_dim + 1)  # we start at 1, hence plus 1
-        emb_size = np.clip(int(voc_size / 10), 2, 16)
-        embedding = Embedding(input_dim=voc_size,
-                              output_dim=emb_size,
-                              input_length=feature.shape[1],
-                              mask_zero=True)
-        embeddings.append(embedding)
-
-        x = embedding(i)
+        if attr_type != AttributeType.NUMERICAL:
+            voc_size = int(attr_dim + 1)  # we start at 1, hence plus 1
+            emb_size = np.clip(int(voc_size / 10), 2, 16)
+            embedding = Embedding(input_dim=voc_size,
+                                  output_dim=emb_size,
+                                  input_length=feature.shape[1],
+                                  mask_zero=True)
+            embeddings.append(embedding)
+            x = embedding(i)
+        else:
+            x = Reshape((feature.shape[1], 1))(i)
 
         if encode:
             x, _ = GRU(latent_dim,
@@ -276,11 +291,16 @@ def binet_model_fn(dataset,
             # Use only the activity features
             present_features = present_features[:1]
 
-        for feature, embedding, attr_key in zip(present_features, embeddings, dataset.attribute_keys):
+        for feature, embedding, attr_key, attr_type in \
+                zip(present_features, embeddings, dataset.attribute_keys, dataset.attribute_types):
+
             i = Input(shape=(None,), name=f'present_{attr_key}{postfix}')
             inputs.append(i)
 
-            x = embedding(i)
+            if attr_type != AttributeType.NUMERICAL:
+                x = embedding(i)
+            else:
+                x = Reshape((feature.shape[1], 1))(i)
 
             if encode:
                 x = GRU(latent_dim,
@@ -292,7 +312,8 @@ def binet_model_fn(dataset,
 
     # Build output layers for each attribute to predict
     outputs = []
-    for feature, attr_dim, attr_key in zip(features, dataset.attribute_dims, dataset.attribute_keys):
+    for feature, attr_dim, attr_key, attr_type in \
+            zip(features, dataset.attribute_dims, dataset.attribute_keys, dataset.attribute_types):
         if attr_key == 'name' or not use_attributes or (not use_present_activity and not use_present_attributes):
             x = past_outputs
         # Else predict the attribute
@@ -326,17 +347,29 @@ def binet_model_fn(dataset,
                     name=f'decoder_{attr_key}{postfix}')(x)
             x = BatchNormalization()(x)
 
-        o = Dense(int(attr_dim), activation='softmax', name=f'out_{attr_key}{postfix}')(x)
+        activation = 'softmax' if attr_type != AttributeType.NUMERICAL else 'linear'
+
+        o = Dense(int(attr_dim), activation=activation, name=f'out_{attr_key}{postfix}')(x)
+
         outputs.append(o)
 
     # Combine features and build model
     features = features + present_features
     model = Model(inputs=inputs, outputs=outputs)
 
+    # Define custom loss
+    def custom_loss(y_true, y_pred):
+        attr_name = y_pred.name.split('_')[1].split('/')[0]
+        return loss_map[attr_name](y_true, y_pred)
+
+    # Register it as custom object, so it may be loaded afterwards in conjunction with the model
+    from keras.utils.generic_utils import get_custom_objects
+    get_custom_objects().update({"custom_loss": custom_loss})
+
     # Compile model
     model.compile(
         optimizer=Adam(),
-        loss=loss
+        loss='custom_loss'
     )
 
     return model, features, targets

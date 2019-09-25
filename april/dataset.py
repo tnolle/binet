@@ -124,7 +124,8 @@ class Dataset(object):
 
         :return:
         """
-        return [np.pad(f[:, 1:], ((0, 0), (0, 1), (0, 0)), mode='constant') for f in self.onehot_features]
+        return [np.pad(f[:, 1:], ((0, 0), (0, 1), (0, 0)), mode='constant') if t == AttributeType.CATEGORICAL else f
+                for f, t in zip(self.onehot_features, self.attribute_types)]
 
     @property
     def train_targets(self):
@@ -254,7 +255,7 @@ class Dataset(object):
     @property
     def onehot_features(self):
         """
-        Return one-hot encoding of integer encoded features.
+        Return one-hot encoding of integer encoded features, while numerical features are passed as they are.
 
         As `features` this will return one tensor for each attribute. Shape of tensor for each attribute will be
         (number_of_cases, max_case_length, attribute_dimension). The attribute dimension refers to the number of unique
@@ -263,7 +264,8 @@ class Dataset(object):
         :return:
         """
         from keras.utils import to_categorical
-        return [to_categorical(f)[:, :, 1:] for f in self.features]
+        return [to_categorical(f)[:, :, 1:] if t == AttributeType.CATEGORICAL else np.expand_dims(f, axis=2)
+                for f, t in zip(self._features, self.attribute_types)]
 
     @property
     def flat_onehot_features(self):
