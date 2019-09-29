@@ -15,13 +15,14 @@
 #  ==============================================================================
 
 class Event(object):
-    def __init__(self, name, timestamp=None, **kwargs):
+    def __init__(self, name, timestamp=None, timestamp_end=None, **kwargs):
         self.name = name
         self.timestamp = timestamp
+        self.timestamp_end = timestamp_end
         self.attributes = dict(kwargs)
 
     def __str__(self):
-        _s = f'Event: name = {self.name}, timestamp = {self.timestamp}'
+        _s = f'Event: activity = {self.name}, timestamp = {self.timestamp}, timestamp_end = {self.timestamp_end}'
 
         attributes = [f'{key} = {value}' for key, value in self.attributes.items()]
         if len(attributes) > 0:
@@ -37,8 +38,10 @@ class Event(object):
     @property
     def json(self):
         """Return the event object as a json compatible python dictionary."""
-        return dict(name=self.name, timestamp=self.timestamp, attributes=self.attributes)
+        return dict(name=self.name, timestamp=self.timestamp, timestamp_end=self.timestamp_end,
+                    attributes=self.attributes)
 
     @staticmethod
     def clone(event):
-        return Event(name=event.name, timestamp=event.timestamp, **dict(event.attributes))
+        return Event(name=event.name, timestamp=event.timestamp, timestamp_end=event.timestamp_end,
+                     **dict(event.attributes))
