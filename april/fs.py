@@ -193,3 +193,34 @@ def get_process_model_files(path=None):
         path = PROCESS_MODEL_DIR
     for f in path.glob('*.plg'):
         yield f.stem
+
+
+def download_bpic_logs():
+    import gzip
+    import requests
+    from tqdm import tqdm
+
+    logs = [
+        ('BPIC12.xes.gz', 'https://data.4tu.nl/repository/uuid:3926db30-f712-4394-aebc-75976070e91f/DATA1'),
+        ('BPIC13_closed_problems.xes.gz',
+         'https://data.4tu.nl/repository/uuid:c2c3b154-ab26-4b31-a0e8-8f2350ddac11/DATA1'),
+        ('BPIC13_incidents.xes.gz', 'https://data.4tu.nl/repository/uuid:500573e6-accc-4b0c-9576-aa5468b10cee/DATA1'),
+        ('BPIC13_open_problems.xes.gz',
+         'https://data.4tu.nl/repository/uuid:3537c19d-6c64-4b1d-815d-915ab0e479da/DATA1'),
+        ('BPIC15_1.xes', 'https://data.4tu.nl/repository/uuid:a0addfda-2044-4541-a450-fdcc9fe16d17/DATA1'),
+        ('BPIC15_2.xes', 'https://data.4tu.nl/repository/uuid:63a8435a-077d-4ece-97cd-2c76d394d99c/DATA1'),
+        ('BPIC15_3.xes', 'https://data.4tu.nl/repository/uuid:ed445cdd-27d5-4d77-a1f7-59fe7360cfbe/DATA1'),
+        ('BPIC15_4.xes', 'https://data.4tu.nl/repository/uuid:679b11cf-47cd-459e-a6de-9ca614e25985/DATA1'),
+        ('BPIC15_5.xes', 'https://data.4tu.nl/repository/uuid:b32c6fe5-f212-4286-9774-58dd53511cf8/DATA1'),
+        ('BPIC17.xes.gz', 'https://data.4tu.nl/repository/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b/DATA1'),
+        ('BPIC17_offer_log.xes.gz', 'https://data.4tu.nl/repository/uuid:7e326e7e-8b93-4701-8860-71213edf0fbe/DATA1'),
+        ('BPIC18.xes.gz', 'https://data.4tu.nl/repository/uuid:3301445f-95e8-4ff0-98a4-901f1f204972/DATA1'),
+        ('BPIC19.xes', 'https://data.4tu.nl/repository/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1/DATA'),
+    ]
+
+    for file_name, url in tqdm(logs):
+        r = requests.get(url, allow_redirects=True)
+        if file_name.endswith('.gz'):
+            open(str(BPIC_DIR / file_name), 'wb').write(r.content)
+        else:
+            gzip.open(str(BPIC_DIR / file_name) + '.gz', 'wb').write(r.content)
