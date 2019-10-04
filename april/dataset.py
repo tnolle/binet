@@ -265,7 +265,7 @@ class Dataset(object):
         """
         from keras.utils import to_categorical
         return [to_categorical(f)[:, :, 1:] if t == AttributeType.CATEGORICAL else np.expand_dims(f, axis=2)
-                for f, t in zip(self._features, self.attribute_types)]
+                for f, t in zip(self.features, self.attribute_types)]
 
     @property
     def flat_onehot_features(self):

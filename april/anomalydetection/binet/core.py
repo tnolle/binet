@@ -269,7 +269,9 @@ def binet_model_fn(dataset,
             embeddings.append(embedding)
             x = embedding(i)
         else:
-            x = Reshape((feature.shape[1], 1))(i)
+            reshape = Reshape((feature.shape[1], 1))
+            embeddings.append(reshape)
+            x = reshape(i)
 
         if encode:
             x, _ = GRU(latent_dim,
@@ -297,10 +299,7 @@ def binet_model_fn(dataset,
             i = Input(shape=(None,), name=f'present_{attr_key}{postfix}')
             inputs.append(i)
 
-            if attr_type != AttributeType.NUMERICAL:
-                x = embedding(i)
-            else:
-                x = Reshape((feature.shape[1], 1))(i)
+            x = embedding(i)
 
             if encode:
                 x = GRU(latent_dim,
