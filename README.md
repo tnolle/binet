@@ -18,33 +18,33 @@ All necessary files to reproduce the results are also included in the repository
 1. Introduction
 2. Related Work
 3. Datasets
-    * [3.1 Example Process](notebooks/3.1%20Example%20Process.ipynb)
-    * [3.2 Dataset Information](notebooks/3.2%20Dataset%20Information.ipynb)
-    * [3.A1 Generation Algorithm](notebooks/3.A1%20Generation%20Algorithm.ipynb)
+    * [3.1 Example Process](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/3.1%20Example%20Process.ipynb)
+    * [3.2 Dataset Information](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/3.2%20Dataset%20Information.ipynb)
+    * [3.A1 Generation Algorithm](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/3.A1%20Generation%20Algorithm.ipynb)
         * Describes how the likelihood graph generation algorithm works and how it can be used.
-    * [3.A2 Dataset Generation](notebooks/3.A2%20Dataset%20Generation.ipynb)
+    * [3.A2 Dataset Generation](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/3.A2%20Dataset%20Generation.ipynb)
         * Generates the same data corpus as used in the paper.
-    * [3.A3 BPIC Datasets](notebooks/3.A3%20BPIC%20Datasets.ipynb)
+    * [3.A3 BPIC Datasets](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/3.A3%20BPIC%20Datasets.ipynb)
         * Adds artifial anomalies to the BPIC datasets. Result will be the same as the ones used in the paper.
 4. Method
-    * [4.1 Heuristics](notebooks/4.1%20Heuristics.ipynb)
-    * [4.A1 Training](notebooks/4.A1%20Training.ipynb)
+    * [4.1 Heuristics](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/4.1%20Heuristics.ipynb)
+    * [4.A1 Training](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/4.A1%20Training.ipynb)
         * Will train and save the anomaly detection models as used in the paper. For non-deterministic anomaly detectors, 
         results might differ from the ones in the paper.
 5. Evaluation
-    * [5.1 Best Strategy](notebooks/5.1%20Best%20Strategy.ipynb)
-    * [5.2 Best Heuristic](notebooks/5.2%20Best%20Heuristic.ipynb)
-    * [5.3 Overall Evaluation](notebooks/5.3%20Evaluation.ipynb)
-    * [5.A1 Evaluation Script](notebooks/5.A1%20Evaluation%20Script.ipynb)
+    * [5.1 Best Strategy](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/5.1%20Best%20Strategy.ipynb)
+    * [5.2 Best Heuristic](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/5.2%20Best%20Heuristic.ipynb)
+    * [5.3 Overall Evaluation](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/5.3%20Evaluation.ipynb)
+    * [5.A1 Evaluation Script](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/5.A1%20Evaluation%20Script.ipynb)
         * Will evaluate all trained models and save the results to a SQLite database.
-    * [5.A2 Additional Evaluations](notebooks/5.A2%20Additional%20Evaluations.ipynb)
+    * [5.A2 Additional Evaluations](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/5.A2%20Additional%20Evaluations.ipynb)
         * Misc. evaluations, e.g., per perspective, per event attribute, etc.
-    * [5.A3 ROC](notebooks/5.A3%20ROC.ipynb)
+    * [5.A3 ROC](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/5.A3%20ROC.ipynb)
         * Analysis of ROC and AUC
-    * [5.A3 Hyperparameters](notebooks/5.A4%20Hyperparameters.ipynb)
+    * [5.A3 Hyperparameters](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/5.A4%20Hyperparameters.ipynb)
         * Test of different hyperparameters for BINet and t-STIDE+
 6. Classifying Anomalies
-    * [6. Classification](notebooks/6.%20Classification.ipynb)
+    * [6. Classification](https://nbviewer.jupyter.org/github/tnolle/binet/blob/master/notebooks/6.%20Classification.ipynb)
         * Produces the heatmap visualization featured in the paper. 
         Additionally, demonstrates how to use the `plot_heatmap` method.
 7. Conclusion
@@ -67,11 +67,8 @@ on Linux and macOS, and `activate ad` on Windows (`cmd` only).
 Note: To use the graph plotting methods, you will have to install Graphviz.
 
 ## References
-1. [Nolle, T., Seeliger, A., Mühlhäuser, M.: Unsupervised anomaly detection in noisy business process event logs using 
-    denoising autoencoders, 2016](https://doi.org/10.1007/978-3-319-46307-0_28)
-2. [Nolle, T., Luettgen, S., Seeliger A., Mühlhäuser, M.: Analyzing business process anomalies using autoencoders, 
-    2018](https://doi.org/10.1007/s10994-018-5702-8)
-3. [Nolle, T., Seeliger, A., Mühlhäuser, M.: BINet: Multivariate Business Process Anomaly Detection Using Deep Learning,
-    2018](https://doi.org/10.1007/978-3-319-98648-7_16)
-4. [Nolle, T., Luettgen, S., Seeliger, A., Mühlhäuser, M.: BINet: Multi-perspective Business Process Anomaly Classification,
-   2019](https://doi.org/10.1016/j.is.2019.101458)
+1. [Nolle, T., Seeliger, A., Mühlhäuser, M.: Unsupervised Anomaly Detection in Noisy Business Process Event Logs Using Denoising Autoencoders, 2016](https://doi.org/10.1007/978-3-319-46307-0_28)
+2. [Nolle, T., Luettgen, S., Seeliger A., Mühlhäuser, M.: Analyzing Business Process Anomalies Using Autoencoders, 2018](https://doi.org/10.1007/s10994-018-5702-8)
+3. [Nolle, T., Seeliger, A., Mühlhäuser, M.: BINet: Multivariate Business Process Anomaly Detection Using Deep Learning, 2018](https://doi.org/10.1007/978-3-319-98648-7_16)
+4. [Nolle, T., Luettgen, S., Seeliger, A., Mühlhäuser, M.: BINet: Multi-perspective Business Process Anomaly Classification, 2019](https://doi.org/10.1016/j.is.2019.101458)
+5. [Nolle, T., Seeliger, A., Thoma, N, Mühlhäuser, M.: DeepAlign: Alignment-based Process Anomaly Correction using Recurrent Neural Networks, 2020](https://arxiv.org/abs/1911.13229)
