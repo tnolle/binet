@@ -90,10 +90,10 @@ class Anomaly(object):
 
         case = Case(label=label)
         for i in range(0, len(p), self.event_len):
-            event = Event(name=g.node[p[i]]['value'])
+            event = Event(name=g.nodes[p[i]]['value'])
             for j in range(1, self.event_len):
-                att = g.node[p[i + j]]['name']
-                value = g.node[p[i + j]]['value']
+                att = g.nodes[p[i + j]]['name']
+                value = g.nodes[p[i + j]]['value']
                 event.attributes[att] = value
             case.add_event(event)
 
@@ -382,9 +382,9 @@ class AttributeAnomaly(Anomaly):
 
                 predecessor = path[index * self.event_len + attribute_index]
 
-                attribute_values = [self.graph.node[s]['value'] for s in self.graph.successors(predecessor)]
+                attribute_values = [self.graph.nodes[s]['value'] for s in self.graph.successors(predecessor)]
                 attribute_domain = [x for x in affected_attribute.domain if x not in attribute_values]
-                original_attribute_value = self.graph.node[path[index * self.event_len + attribute_index + 1]]['value']
+                original_attribute_value = self.graph.nodes[path[index * self.event_len + attribute_index + 1]]['value']
 
                 indices.append(int(index))
                 original_attribute_values.append(original_attribute_value)

@@ -169,7 +169,7 @@ class EventLogGenerator(object):
                 probabilities = np.ones(len(successors)) / len(successors)
 
             for successor, probability in zip(successors, probabilities):
-                self.likelihood_graph.node[successor]['probability'] = probability
+                self.likelihood_graph.nodes[successor]['probability'] = probability
                 self.likelihood_graph.edges[node, successor]['probability'] = np.round(probability, 2)
 
         return self.likelihood_graph
