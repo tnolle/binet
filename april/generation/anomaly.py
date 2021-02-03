@@ -382,9 +382,9 @@ class AttributeAnomaly(Anomaly):
 
                 predecessor = path[index * self.event_len + attribute_index]
 
-                attribute_values = [self.graph.node[s]['value'] for s in self.graph.successors(predecessor)]
+                attribute_values = [self.graph.nodes[s]['value'] for s in self.graph.successors(predecessor)]
                 attribute_domain = [x for x in affected_attribute.domain if x not in attribute_values]
-                original_attribute_value = self.graph.node[path[index * self.event_len + attribute_index + 1]]['value']
+                original_attribute_value = self.graph.nodes[path[index * self.event_len + attribute_index + 1]]['value']
 
                 indices.append(int(index))
                 original_attribute_values.append(original_attribute_value)
